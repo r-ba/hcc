@@ -1,0 +1,12 @@
+[package]
+name = "parser"
+version = "1.2.3"
+
+[dependencies]
+pest = { git = "https://github.com/r-ba/pest", branch = "master", version = "2.0.2"}
+libhcc = { path = "libhcc/" }
+argparse = "0.2.2"
+
+[[bin]]
+name="hcc"
+path="src/cli.rs"
